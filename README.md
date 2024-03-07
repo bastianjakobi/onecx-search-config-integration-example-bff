@@ -73,7 +73,7 @@ As a starting point please copy all contents of [OnecxSearchConfigIntegrationExa
 Run `mvn clean compile` to execute all plugins and generate the boilerplate source code necessary for the following steps of this guide.
 
 ### Step 7: Copy other mappers
-Copy all [`mappers`](./src/main/java/org/tkit/onecx/search/config/integration/bff/rs/mappers/) that don't yet exist in your project to your mappers folder. If some of the files in this projects' `mappers` folder already exist in your project, please make sure that the contents of the files match to ensure all mappings to work properly. Lastly check that all imports match your package structure.
+Copy all [`mappers`](./src/main/java/org/tkit/onecx/search/config/integration/bff/rs/mappers/) that don't yet exist in your project to your `mappers` folder. If some of the files in this projects' `mappers` folder already exist in your project, please make sure that the contents of the files match to ensure all mappings to work properly. Lastly check that all imports match your package structure.
 
 ### Step 8: Create `SearchConfigRestController.java` and verify integration
 Add a new controller called `SearchConfigRestController.java` to your BFFs `controllers` directory and copy all contents of [`SearchConfigRestController.java`](./src/main/java/org/tkit/onecx/search/config/integration/bff/rs/controllers/SearchConfigRestController.java) to the newly created file. To finish the integration of search configs into your BFF check that all imports in `SearchConfigRestController.java` match your package structure and run `mvn clean compile quarkus:dev` to verify that everything is working as expected.
