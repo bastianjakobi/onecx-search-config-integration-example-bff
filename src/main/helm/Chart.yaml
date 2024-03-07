@@ -1,0 +1,18 @@
+apiVersion: v2
+name: onecx-search-config-integration-example-bff
+version: 0.0.0
+appVersion: 0.0.0
+description: Example for integration of onecx-search-config-svc into bff
+keywords:
+  - search-config
+  - bff
+sources:
+  - https://github.com/bastianjakobi/onecx-search-config-integration-example-bff
+maintainers:
+  - name: Tkit Developer
+    email: tkit_dev@1000kit.org
+dependencies:
+  - name: helm-quarkus-app
+    alias: app
+    version: ^0
+    repository: oci://ghcr.io/onecx/charts
